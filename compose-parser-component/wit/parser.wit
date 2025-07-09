@@ -1,0 +1,10 @@
+package compose-parser:parser@0.1.0;
+
+interface parse{
+    parse: func();
+}
+
+world parser {
+    include wasi:cli/imports@0.2.0;
+    export parse;
+}
